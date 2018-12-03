@@ -87,6 +87,6 @@ function sendMessage( txt ){
     $('div.message:last').animate({opacity: '1.0'}, 1500);
     
     // Cleaning the Text Input
-    $('.footer-bar#text-message').val('');
+    $('.footer-bar #text-message').val('');
     
 }

@@ -33,6 +33,15 @@ $(function(){
         }
     )
     
+    //
+    // (( 4 )) Enter in id="text-message"
+    //
+    $("#text-message").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#send-button").click();
+    }
+});
+    
     return;
 }
 );
