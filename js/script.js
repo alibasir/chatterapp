@@ -31,9 +31,17 @@ $(function(){
         function(){
             switchChannel(this);
         }
-    )
-    
-    return;
+    );
+        
+    //
+    // (( 4 )) Enter into the id="text-message"
+    //
+    $("#text-message").keyup(function(event) {
+        if (event.keyCode === 13) {
+            $("#send-button").click();
+        }
+        return;
+    });
 }
 );
 
