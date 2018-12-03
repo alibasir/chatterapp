@@ -1,0 +1,295 @@
+/* #4 #sweat #external css file */
+
+/* GLOBAL */
+
+/* #4 #global styles*/
+
+* {
+    /* #4 use #roboto #font */
+    font-family: 'Roboto', 'Arial', sans-serif;
+
+     /* #4 #sweat take care of #spacing between various elements */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background-color: #F5F5F5;
+    /*display: flex;*/
+}
+
+/* #4 # sweat #uppercase buttons and w3w locations */
+button, strong {
+    text-transform: uppercase;
+}
+
+/* APP BAR */
+
+/* #4 #sweat address both #app-bar s */
+h1 {
+    background-color: #3F51B5;
+    color: white;
+    height: 56px;
+    font-size: 20px;
+    line-height: 56px;
+    padding-left: 2.5%;
+    position: relative;
+}
+h1 img#chatter-app-icon {
+    height: 56px;
+    position: absolute;
+    left: 16px;
+    bottom: 0px;
+}
+h1 #chatter-app-name{
+    position: absolute;
+    left: 72px;
+}
+
+/* CHANNELS LIST */
+
+/* #4 #sweat #channels */
+ul {
+    /* #3 #channels #list modifies h2 to ul */
+    background-color: white;
+    /* #3 #channels #bullets removed */
+    list-style-type: none;
+}
+
+li {
+    padding: 12px 16px;
+    font-size: 16px;
+
+    border-bottom: 1px solid #F5F5F5;
+
+    height: 36px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.selected {
+    color: #3F51B5;
+    border-left: 4px solid #3F51B5;
+}
+
+li .channel-meta {
+    font-size: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/*
+li .channel-meta .box-exp {
+    border-radius : 2px;
+    background-color : #3F51B5;
+    font-size : 12px;
+    padding : 2px 4px;
+    margin : 2px;
+    color : white;
+}
+*/
+
+/* TAB BAR */
+
+/* #4 #sweat #tab-bar */
+#tab-bar {
+    /* #3 #tab-bar #container should be white */
+    background-color: white;
+    /* #3 #tab-bar #container has all buttons centered */
+    text-align: center;
+    width: 100%;
+}
+
+
+/* #4 add styles to #tab-bar #buttons */
+.footer-bar button {
+    background-color: white;
+    border: none;
+    
+    /* #4 #tab-bar buttons have a width of #one-third of the available space */
+    width: 33%;
+    flex: 1 1 0;
+    height: 72px;
+    padding: 16px;
+    white-space: normal;
+
+}
+
+/* #4 #tab-bar buttons do have a #line-break and images are centered due to the left&right auto margin */
+.footer-bar button img {
+    display: block;
+    margin: 0 auto 4px auto;
+}
+
+/* #4 the selected #tab-bar #button is #highlighted */
+.footer-bar button.selected {
+    color: #3F51B5;
+    border-bottom: 4px solid #3F51B5;
+}
+
+
+/* MESSAGES */
+/* #4 select #specific #messages by class and re-assign element styles according to their #hierarchy in a nested way */
+
+.message {
+    /* #3 #chat #width*/
+    width: 80%;
+
+    /* #4 align all #messages using #margins */
+    margin-left: 2.5%;
+
+    /* #4 #message distance to next message container*/
+    margin-bottom: 8px;
+}
+
+
+.message h3 {
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.message h3 em {
+    font-size: larger;
+    font-style: normal;
+    width: 150px;
+    text-align: right;
+    overflow: hidden;
+}
+
+.message h3 a {
+    /* #3 #chat #link color is primary text */
+    color: black;
+    width: 250px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.message p {
+    position: relative;
+    background-color: white;
+    padding: 16px;
+}
+
+.message p button {
+    background-color: #CDDC39;
+    color: black;
+    text-transform: uppercase;
+    
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+
+/* #4 left align own #messages using #margins */
+.message.own {
+    margin-left: 17.5%;
+}
+
+/* LAYOUT */
+
+#channels {
+    
+    position: absolute;
+    left: 0px;
+    width: 40%;
+    height: 100%;
+}
+#chat {
+    position: absolute;
+    right: 0px;
+    width: 60%;
+    height: 100%;
+}
+#chat .message-zone{
+    position: absolute;
+    top: 56px;
+    bottom: 72px;
+    width: 100%;
+    overflow: auto;
+}
+
+ul {
+    position: absolute;
+    top: 56px;
+    bottom: 72px;
+    overflow: auto;
+    width: 100%;
+}
+
+#emojis {
+    display: none;
+
+    width: 300px;
+    height: 300px;
+    padding: 16px;
+    border: 1px solid black;
+    font-size: 24px;
+    background-color: white;
+    overflow: auto;
+    text-align: left;
+    
+    position: absolute;
+    left: 16px;
+    bottom: 60px;
+}
+
+#chat-channel-location a{
+    color: white;
+}
+
+#chat h1 {
+    position: relative;
+    vertical-align: middle;
+}
+#chat h1 i {
+    position: absolute;
+    right: 16px;
+    height: 24px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.footer-bar {
+    position: absolute;
+    display: flex;    
+    bottom: 0px;
+    height: 72px;
+    width: 100%;
+}
+
+.footer-bar button i {
+    line-height: 30px;
+}
+
+i {
+    font-size: 24px;
+}
+
+.footer-bar #send-button {
+    flex: 0 0 56px;
+}
+
+.footer-bar #text-message{
+    padding: 12px;
+    flex: 1 0 auto;
+    border: none;
+    font-size: 16px;
+}
+
+.footer-bar #emojis-button {
+    flex: 0 0 56px;
+}
+
+::placeholder {
+    color: grey;
+    font-style: italic;
+}
