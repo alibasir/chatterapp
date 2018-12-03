@@ -31,18 +31,18 @@ $(function(){
         function(){
             switchChannel(this);
         }
-    )
-    
+    );
+        
     //
-    // (( 4 )) Enter in id="text-message"
+    // (( 4 )) Enter into the id="text-message"
     //
     $("#text-message").keyup(function(event) {
-    if (event.keyCode === 13) {
-        $("#send-button").click();
-    }
-});
-    
-    return;
+        if (event.keyCode === 13) {
+            $("#send-button").click();
+        }
+        return;
+    });
+
 }
 );
 
