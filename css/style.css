@@ -43,7 +43,7 @@ h1 {
 }
 #chatter-app-name{
     position: absolute;
-    left: 72px;
+    left: 72px; /* Sum of width(=height) and left  properties of the #chatter-app-icon */
 }
 
 /* CHANNELS LIST */
